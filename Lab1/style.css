@@ -13,9 +13,5 @@ div {
     color: aliceblue;
     font-family: 'Courier New', Courier, monospace;
     text-align: justify;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
     }
 
