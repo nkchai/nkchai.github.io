@@ -15,22 +15,32 @@
 /* Flexbox Part 2 */
 
 #flex-section2 ul {
+	display: flex; 
+	flex-direction: row;
+	margin: 1px;
+	padding: 1px;
+	
 
 }
 
 #flex-section2 li {
+	list-style-type: none;
+	font-weight: 400;
 
 }
 
 #flex-section2 .item1 {
+	flex: 1 900px;
 
 }
 
 #flex-section2 .item2 {
+	flex: 2 900px;
 
 }
 
 #flex-section2 .item3 {
+	flex: 3 900px;
 
 }
 
