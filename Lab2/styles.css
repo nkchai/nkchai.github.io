@@ -86,7 +86,7 @@
 /* Grid Part 2 */
 
 #grid-section2 .gridboxblue {
-
+	
 }
 
 #grid-section2 .gridboxred {
@@ -99,23 +99,30 @@
 /* Grid Part 3 */
 
 #grid-section3 .grid {
-
+	display: grid;
+	grid-template-rows: 100px 300px 100px;
+	grid-template-columns: 2fr 1fr;
+	gap: 10px;
 }
 
 #grid-section3 .box1 {
+	grid-column: 1 / 3;
+	
 
 }
 
 #grid-section3 .box2 {
+	grid-column: 2 / 2;
 
 }
 
 #grid-section3 .box3 {
+	grid-row: 2 / 3;
 
 }
 
 #grid-section3 .box4 {
-
+	grid-column: 1 / 3;
 }
 
 /* end Grid Part 3 */
