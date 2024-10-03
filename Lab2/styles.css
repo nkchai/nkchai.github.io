@@ -86,11 +86,16 @@
 /* Grid Part 2 */
 
 #grid-section2 .gridboxblue {
-	
+	display: grid;
+	grid-column: 2 / 4;
+	grid-row: 1 / 4;
+
 }
 
 #grid-section2 .gridboxred {
-
+	display: grid;
+	grid-column: 1 / 3;
+	grid-row: 2 / 3;
 }
 
 /* end Grid Part 2 */
