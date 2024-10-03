@@ -3,8 +3,8 @@
 #flex-section1 ul {
 	display: flex; 
 	list-style-type: none;
-	margin: 1px;
-	padding: 1px;
+	margin: 0px;
+	padding: 0px;
 	justify-content: space-evenly;
 	
 }
@@ -17,8 +17,8 @@
 #flex-section2 ul {
 	display: flex; 
 	flex-direction: row;
-	margin: 1px;
-	padding: 1px;
+	margin: 0px;
+	padding: 0px;
 	
 
 }
@@ -30,17 +30,18 @@
 }
 
 #flex-section2 .item1 {
-	flex: 1 900px;
+	flex: 30;
 
 }
 
 #flex-section2 .item2 {
-	flex: 2 900px;
+	flex: 30;
+	order: 3;
 
 }
 
 #flex-section2 .item3 {
-	flex: 3 900px;
+	flex: 30;
 
 }
 
@@ -60,8 +61,8 @@
 #flex-section3 .tags ul {
 	display: flex;
 	list-style-type: none;
-	margin: 1px;
-	padding: 1px;
+	margin: 0px;
+	padding: 0px;
 	flex-flow: row wrap;
 
 
@@ -117,7 +118,7 @@
 }
 
 #grid-section3 .box2 {
-	grid-column: 2 / 2;
+	grid-column: 2 / 3;
 
 }
 
