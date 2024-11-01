@@ -41,8 +41,9 @@ bill_total.addEventListener('input', function () {
             }
             tip_slider.value = value;
             // tipamount.innerHTML = value
-            convertbill(bill);
-
+            // convertbill(bill);
+            total_final.value = "";
+            tipamount.value = "";
         });
 
     }
