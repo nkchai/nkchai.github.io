@@ -28,7 +28,7 @@ body {
 
 @media (max-width: 600px) {
     .form-class {
-        width: 90vw; 
+        width: 100vw; 
         padding: 15px;
         gap: 4vh; 
         font-size: larger;
