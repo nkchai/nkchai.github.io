@@ -3,31 +3,57 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
-   
+
 </head>
 
 <body>
-    
-    <form id="tip Calculator">
+
+    <form id="tip Calculator" class="form-class">
         <h1>Tip Calculator</h1>
+        <div id="currency">
+            <p>Currecy Conversion</p>
+            <p>$1 USD = ¥149.34 JPY for Yen</p>
+            <p>$1 USD = ₹84.07 INR for Rupee</p>
+        </div>
         <div class="field">
             <label for="Bill Total">Bill Total:</label>
-            <input type="text" id="Bill total" name="bill total" placeholder="Enter total bill amount" />
-            <span class="error-message-bill total" id="errormessagebt"></span>
+            <div>
+                <span>$</span>
+                <input type="text" id="Bill total" name="bill total" placeholder="Enter total bill amount" />
+            </div>
+        </div>
+        <span class="error-message" id="errormessagebt"></span>
+        <div id="select currency">
+            <label for="Currency">Select Currency:</label>
+            <select id="Currency" name="Currency">
+                <option value="USD">USD</option>
+                <option value="INR">INR</option>
+                <option value="YEN">JPY</option>
+            </select>
         </div>
         <div class="slidecontainer">
             <label for="Tip Percentage">Tip Percentage:</label>
-            <input type="range" id="tipslider" min="0" max="100" value="10" class="slider" id="myRange" >
-            <input type="number" id="tippercentinput" class="percentage" min="0" max="100" value="10" disabled>
-            <span class="error-message" id="errormessageslider"></span>
+            <input type="range" id="tipslider" min="0" max="100" value="0" class="slider" id="myRange">
+            <div>
+                <input type="number" id="tippercentinput" class="percentage" min="0" max="100" value="0" disabled>
+                <span>%</span>
+                <span class="error-message" id="errormessageslider"></span>
+            </div>
         </div>
         <div class="Converted Tip Amount">
             <label for="Converted Tip Amount">Converted Tip Amount:</label>
-            <input type="number" id="converted tip amount" name="converted tip amount" class="grayed-out"  disabled>
+            <div>
+                <span>$</span>
+                <input type="text" id="converted tip amount" name="converted tip amount" class="grayed-out" disabled>
+            </div>
         </div>
         <div class="Converted Total Bill with Tip">
             <label for="Converted Total Bill with Tip">Converted Total Bill with Tip:</label>
-            <input type="number" id="Converted Total Bill with Tip" name="Converted Total Bill with Tip" class="grayed-out" placeholder="" disabled>
+            <div>
+                <span>$</span>
+                <input type="text" id="Converted Total Bill with Tip" name="Converted Total Bill with Tip"
+                    class="grayed-out" placeholder="" disabled>
+            </div>
         </div>
 
     </form>

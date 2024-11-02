@@ -1,17 +1,27 @@
-/* body{
+body{
     background-color: rgb(0, 0, 0);
     color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 
 }
 
-form {
-    background-color: rgb(0, 0, 0);
-    width: auto;
-    border: 40px solid rgb(229, 14, 14);
-    padding: 50px;
-    margin: 20px;
+.form-class {
+    align-items: center;
+    background-color: rgb(16, 150, 246);
+    /* width: 25vw;
+    height: 60vh;  */
+    border: 10px solid rgb(231, 227, 227);
+    padding: 20px; 
+    margin: 0; 
     color: aliceblue;
     font-family: 'Courier New', Courier, monospace;
-    text-align: justify;
-    } */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    gap: 2vh;
+} 
 

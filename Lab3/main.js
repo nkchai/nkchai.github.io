@@ -17,7 +17,7 @@ bill_total.addEventListener('input', function () {
     if (!isNaN(bill) && bill > 0) {
         errmessagebt.style.display = 'none'
         tip_slider.disabled = false;
-        tip_per_input.disabled = false;
+        // tip_per_input.disabled = false;
         convertbill(bill);
         tip_slider.addEventListener('input', function () {
             errmessageslider.style.display = 'none';
@@ -42,8 +42,7 @@ bill_total.addEventListener('input', function () {
             tip_slider.value = value;
             // tipamount.innerHTML = value
             // convertbill(bill);
-            total_final.value = "";
-            tipamount.value = "";
+           
         });
 
     }
@@ -52,7 +51,11 @@ bill_total.addEventListener('input', function () {
         errmessagebt.style.display = 'inline'
         tip_slider.disabled = true;
         tip_per_input.disabled = true;
-        convertbill(bill);
+        total_final.value = "";
+        tipamount.value = "";
+        tip_slider.value = 0;
+        tip_per_input.value = 0;
+        // convertbill(bill);
     }
 
     function convertbill(bill) {
