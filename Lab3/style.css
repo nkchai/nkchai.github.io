@@ -80,15 +80,24 @@ input[type="range"] {
 
 @media (max-width: 600px) {
     .form-class {
-        width: 20vh;
-        height: 50vh;
-        padding: 15px;
-        gap: 4vh;
-        font-size: larger;
+        width: 100%; 
+        padding: 10px; 
+        font-size: 3vh; 
+    }
+    h1{
+        font-size: 4vh;
+    }
+    body {
+        padding: 10px; 
     }
 
-    body {
-        height: auto;
-        padding: 20px;
+    .currency-para {
+        margin-bottom: 1vh; 
+    }
+
+    .error-message {
+        font-size: 3vh; 
+        margin-top: 1vh; 
     }
 }
+
