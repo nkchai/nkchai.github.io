@@ -8,6 +8,9 @@ body {
 
 }
 
+.currency{
+    background-color: bisque;
+}
 .form-class {
     align-items: center;
     background-color: rgb(16, 150, 246);

@@ -10,7 +10,7 @@
 
     <form id="tip Calculator" class="form-class">
         <h1>Tip Calculator</h1>
-        <div id="currency">
+        <div id="currency-para">
             <p>Currecy Conversion</p>
             <p>$1 USD = ¥149.34 JPY for Yen</p>
             <p>$1 USD = ₹84.07 INR for Rupee</p>
@@ -26,9 +26,9 @@
         <div id="select currency">
             <label for="Currency">Select Currency:</label>
             <select id="Currency" name="Currency">
-                <option value="USD">USD</option>
-                <option value="INR">INR</option>
-                <option value="YEN">JPY</option>
+                <option value="USD">US Dollars ($)</option>
+                <option value="INR">Indian Rupee (₹)</option>
+                <option value="YEN">Japanese Yen (¥)</option>
             </select>
         </div>
         <div class="slidecontainer">
@@ -43,14 +43,14 @@
         <div class="Converted Tip Amount">
             <label for="Converted Tip Amount">Converted Tip Amount:</label>
             <div>
-                <span>$</span>
+                <span id="symbol">$</span>
                 <input type="text" id="converted tip amount" name="converted tip amount" class="grayed-out" disabled>
             </div>
         </div>
         <div class="Converted Total Bill with Tip">
             <label for="Converted Total Bill with Tip">Converted Total Bill with Tip:</label>
             <div>
-                <span>$</span>
+                <span id="symbol1">$</span>
                 <input type="text" id="Converted Total Bill with Tip" name="Converted Total Bill with Tip"
                     class="grayed-out" placeholder="" disabled>
             </div>
