@@ -74,30 +74,67 @@ input[type="range"] {
     width: 20em;
     margin-top: 0.2em;
     background-color: #eff4fa30;
-    
+
 }
 
 
 @media (max-width: 600px) {
     .form-class {
-        width: 100%; 
-        padding: 10px; 
-        font-size: 3vh; 
+        width: 100%;
+        padding: 10px;
+        font-size: vh;
+
     }
-    h1{
+
+    h1 {
         font-size: 4vh;
     }
+
     body {
-        padding: 10px; 
+        padding: 10px;
     }
 
     .currency-para {
-        margin-bottom: 1vh; 
+        margin-bottom: 1vh;
     }
 
     .error-message {
-        font-size: 3vh; 
-        margin-top: 1vh; 
+        font-size: 3vh;
+        margin-top: 1vh;
+    }
+
+    input[type="text"],
+    input[type="range"] {
+        font-weight: bolder;
+        font-size: medium
+    }
+
+    .Bill-total {
+        width: 15em;
+        margin-top: 0.2em;
+    }
+
+    .percentage-container {
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        margin-top: 0.2em;
+    }
+
+    #tippercentinput {
+        width: 15.5em;
+        /* padding-left: 0;  */
+        margin-left: 11%;
+        background-color: #fbfdff30;
+
+    }
+
+    .grayed-out {
+        width: 15em;
+        margin-top: 0.2em;
+        background-color: #eff4fa30;
+
     }
 }
-
