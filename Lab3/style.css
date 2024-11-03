@@ -80,14 +80,15 @@ input[type="range"] {
 
 @media (max-width: 600px) {
     .form-class {
-        width: 80vw;
+        width: 20vh;
+        height: 50vh;
         padding: 15px;
         gap: 4vh;
         font-size: larger;
     }
 
     body {
-        height: 70vh;
+        height: auto;
         padding: 20px;
     }
 }

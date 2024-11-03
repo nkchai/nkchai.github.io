@@ -18,8 +18,9 @@ currency.disabled = true;
 bill_total.addEventListener('input', function () {
 
     const bill = parseFloat(bill_total.value);
-
-    if (!isNaN(bill) && bill > 0) {
+    console.log(bill);
+    errmessagebt.style.display = 'none';
+    if (bill > 0 && !isNaN(bill) ) {
         errmessagebt.style.display = 'none'
         tip_slider.disabled = false;
         currency.disabled = false;
@@ -74,9 +75,10 @@ bill_total.addEventListener('input', function () {
         })
 
     }
-    else {
-        // if (isNaN(bill)) errmessagebt.style.display = 'none';
-        // else errmessagebt.textContent = "Number must be positive";
+    else  {
+        // if (bill_total.value==="") errmessagebt.style.display = 'none';
+        // else 
+        errmessagebt.textContent = "Input must be a positive number";
         errmessagebt.style.display = 'inline'
         tip_slider.disabled = true;
         tip_per_input.disabled = true;
