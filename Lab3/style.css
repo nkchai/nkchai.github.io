@@ -8,8 +8,8 @@ body {
 
 }
 
-.currency{
-    background-color: bisque;
+.currency-para{
+    background-color: rgb(212, 36, 159);
 }
 .form-class {
     align-items: center;
@@ -31,7 +31,7 @@ body {
 
 @media (max-width: 600px) {
     .form-class {
-        width: 100vw; 
+        width: 80vw; 
         padding: 15px;
         gap: 4vh; 
         font-size: larger;
