@@ -1,6 +1,6 @@
 body {
-    background-color: #f4f4f4; 
-    color: #333; 
+    background-color: #b5c3d1;
+    color: #333;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,44 +8,86 @@ body {
 }
 
 .currency-para {
-    background-color: #c1e1c1; 
-    border-radius: 15px; 
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
-    padding: 10px; 
+    background-color: #c1e1c1;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding-left: 5px;
+    padding-right: 5px;
 }
-.error-message{
+
+.error-message {
     color: red;
 }
 
 .form-class {
     align-items: center;
-    background-color: #d4effb; 
-    border: 10px solid #90caf9; 
+    background-color: #d4effb;
+    border: 10px solid #90caf9;
     padding: 20px;
     margin: 0;
-    color: #333; 
+    color: #333;
     font-family: 'Courier New', Courier, monospace;
-    font-weight:bolder;
-    font-size:3vh;
+    font-weight: bolder;
+    font-size: 3vh;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2vh;
-    border-radius: 15px; 
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
+
+h1 {
+    margin: 0;
+}
+
+input[type="text"],
+input[type="option"],
+input[type="range"] {
+    font-weight: bolder;
+    font-size: medium
+}
+
+.Bill-total {
+    width: 20em;
+    margin-top: 0.2em;
+}
+
+.percentage-container {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 0.2em;
+}
+
+#tippercentinput {
+    width: 22.5em;
+    /* padding-left: 0;  */
+    margin-left: 10%;
+    background-color: #42638d30;
+
+}
+
+.grayed-out {
+    width: 20em;
+    margin-top: 0.2em;
+    background-color: #42638d30;
+}
+
 
 @media (max-width: 600px) {
     .form-class {
-        width: 80vw; 
+        width: 80vw;
         padding: 15px;
-        gap: 4vh; 
+        gap: 4vh;
         font-size: larger;
     }
 
     body {
-        height: 90vh; 
-        padding: 20px; 
+        height: 70vh;
+        padding: 20px;
     }
 }

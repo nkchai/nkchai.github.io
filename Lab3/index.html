@@ -16,16 +16,16 @@
             <label for="Bill Total">Bill Total:</label>
             <div>
                 <span>$</span>
-                <input type="text" id="Bill total" name="bill total" placeholder="Enter total bill amount" />
+                <input type="text" class="Bill-total" id="Bill total" placeholder="Enter total bill amount" />
             </div>
         </div>
         <span class="error-message" id="errormessagebt"></span>
         <div id="currency-para" class="currency-para">
-            <p>Currecy Conversion</p>
+            <p>Currency Conversion</p>
             <p>$1 USD = ¥149.34 JPY for Yen</p>
             <p>$1 USD = ₹84.07 INR for Rupee</p>
         </div>
-        <div id="select currency" >
+        <div id="select currency">
             <label for="Currency">Select Currency:</label>
             <select id="Currency" name="Currency">
                 <option value="USD">US Dollars ($)</option>
@@ -35,13 +35,16 @@
         </div>
         <div class="slidecontainer">
             <label for="Tip Percentage">Tip Percentage:</label>
-            <input type="range" id="tipslider" min="0" max="100" value="0" class="slider" id="myRange">
-            <div>
-                <input type="number" id="tippercentinput" class="percentage" min="0" max="100" value="0" disabled>
+            <input type="range" id="tipslider" min="0" max="100" value="0" class="slider">
+            <div class="percentage-container">
+
+                <input type="text" id="tippercentinput" class="percentage" min="0" max="100" disabled>
                 <span>%</span>
-                <span class="error-message" id="errormessageslider"></span>
+                <!-- <span class="error-message" id="errormessageslider"></span> -->
+
             </div>
         </div>
+
         <div class="Converted Tip Amount">
             <label for="Converted Tip Amount">Converted Tip Amount:</label>
             <div>

@@ -23,7 +23,7 @@ bill_total.addEventListener('input', function () {
         errmessagebt.style.display = 'none'
         tip_slider.disabled = false;
         currency.disabled = false;
-        // tip_per_input.disabled = false;
+        tip_per_input.value = tip_slider.value;
         convertbill(bill);
         tip_slider.addEventListener('input', function () {
             errmessageslider.style.display = 'none';
@@ -48,34 +48,34 @@ bill_total.addEventListener('input', function () {
         //     tip_slider.value = value;
         //     // tipamount.innerHTML = value
         //     // convertbill(bill);
-       
-           
+
+
         // });
-        currency.addEventListener('input',function(){
-            if (currency.value === "USD"){ 
+        currency.addEventListener('input', function () {
+            if (currency.value === "USD") {
                 camount = 1;
-                symbol.textContent='$';
-                symbol1.textContent='$';
+                symbol.textContent = '$';
+                symbol1.textContent = '$';
                 convertbill(bill);
             }
-            else if (currency.value === "INR"){
+            else if (currency.value === "INR") {
                 camount = 84.07;
-                symbol.textContent='₹';
-                symbol1.textContent='₹';
+                symbol.textContent = '₹';
+                symbol1.textContent = '₹';
                 convertbill(bill);
             }
             else if (currency.value === "YEN") {
                 camount = 149.34;
-                symbol.textContent='¥';
-                symbol1.textContent='¥';
+                symbol.textContent = '¥';
+                symbol1.textContent = '¥';
                 convertbill(bill);
             }
-            
+
         })
 
     }
     else {
-        if(isNaN(bill)) errmessagebt.style.display= 'none';
+        if (isNaN(bill)) errmessagebt.style.display = 'none';
         else errmessagebt.textContent = "Number must be positive";
         errmessagebt.style.display = 'inline'
         tip_slider.disabled = true;
@@ -89,9 +89,9 @@ bill_total.addEventListener('input', function () {
     }
 
     function convertbill(bill) {
-        
+
         bill1 = bill * camount;
-        const tip_percent = parseFloat(tip_per_input.value, 10);
+        const tip_percent = parseFloat(tip_slider.value, 10);
         const tipAmount = (bill1 * (tip_percent / 100)).toFixed(2); // Calculate tip amount
         tipamount.value = tipAmount; // Update the displayed converted tip amount
         total_final.value = (parseFloat(bill1) + parseFloat(tipAmount)).toFixed(2);
