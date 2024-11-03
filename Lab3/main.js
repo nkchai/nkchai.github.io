@@ -75,7 +75,8 @@ bill_total.addEventListener('input', function () {
 
     }
     else {
-        errmessagebt.textContent = "Number must be positive";
+        if(isNaN(bill)) errmessagebt.style.display= 'none';
+        else errmessagebt.textContent = "Number must be positive";
         errmessagebt.style.display = 'inline'
         tip_slider.disabled = true;
         tip_per_input.disabled = true;
