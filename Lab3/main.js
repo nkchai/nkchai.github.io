@@ -10,7 +10,7 @@ const symbol = document.getElementById("symbol");
 const symbol1 = document.getElementById("symbol1");
 errmessageslider.style.display = 'none';
 tip_slider.disabled = true;
-errmessagebt.style.display = 'none'
+errmessagebt.style.display = 'none';
 let camount = 1;
 let bill1 = 0;
 currency.disabled = true;
@@ -75,8 +75,8 @@ bill_total.addEventListener('input', function () {
 
     }
     else {
-        if (isNaN(bill)) errmessagebt.style.display = 'none';
-        else errmessagebt.textContent = "Number must be positive";
+        // if (isNaN(bill)) errmessagebt.style.display = 'none';
+        // else errmessagebt.textContent = "Number must be positive";
         errmessagebt.style.display = 'inline'
         tip_slider.disabled = true;
         tip_per_input.disabled = true;

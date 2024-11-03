@@ -43,7 +43,6 @@ h1 {
 }
 
 input[type="text"],
-input[type="option"],
 input[type="range"] {
     font-weight: bolder;
     font-size: medium
@@ -67,14 +66,15 @@ input[type="range"] {
     width: 22.5em;
     /* padding-left: 0;  */
     margin-left: 11%;
-    background-color: #42638d30;
+    background-color: #fbfdff30;
 
 }
 
 .grayed-out {
     width: 20em;
     margin-top: 0.2em;
-    background-color: #42638d30;
+    background-color: #eff4fa30;
+    
 }
 
 
