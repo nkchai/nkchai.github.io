@@ -42,8 +42,7 @@ h1 {
     margin: 0;
 }
 
-input[type="text"],
-input[type="range"] {
+input[type="text"],input[type="range"] {
     font-weight: bolder;
     font-size: medium
 }
